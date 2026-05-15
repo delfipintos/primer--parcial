@@ -14,6 +14,14 @@ header {
   padding: 3rem 0;
 }
 
+h1 {
+    color: #070427;
+}
+
+h2 {
+    color: #2a265f;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -31,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #423774;
+  background-color: #d49fff;
   color: #fff;
 }
 
@@ -40,5 +48,6 @@ nav a:active {
 }
 
 nav a:visited {
-  color: #60bfff;
+  color: #b760ff;
 }
+
