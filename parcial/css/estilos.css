@@ -2,16 +2,23 @@ body {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal; 
+  text-align: center;
+  background-image: url("./img/fondo.png");
+  background-repeat: repeat;
+
 }
 
   .contenedor {
   max-width: 1200px;
-  margin: 0 auto; 
-  padding: 0 20px;
+  margin: 2rem auto; 
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+
 }
 
 header {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 h1 {
@@ -22,15 +29,16 @@ h2 {
     color: #2a265f;
 }
 
-nav ul {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;        
-  gap: 20px;         
+  gap: 20px;
+  justify-content: center;
 }
 
-nav a {
+a {
   display: block;
   padding: 10px 15px; 
   color: #070427;
@@ -38,7 +46,7 @@ nav a {
   border-radius: 5px;
 }
 
-nav a:hover {
+a:hover {
   background-color: #d49fff;
   color: #fff;
 }
@@ -50,4 +58,3 @@ nav a:active {
 nav a:visited {
   color: #b760ff;
 }
-
