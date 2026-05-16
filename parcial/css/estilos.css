@@ -1,20 +1,28 @@
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal; 
+  font-style: normal;
   text-align: center;
   background-image: url("./img/fondo.png");
   background-repeat: repeat;
+  }
 
+h1, h2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal; 
 }
 
-  .contenedor {
-  max-width: 1200px;
-  margin: 2rem auto; 
-  padding: 2rem;
+.contenedor {
+  width: 90%;
+  max-width: 50rem;
+  margin: 3rem auto; 
+  padding: 3%;
   background-color: white;
-  border-radius: 12px;
-
+  border-radius: 0.75rem; 
+  border-color: #070427;
+  border-style: solid;
 }
 
 header {
@@ -29,21 +37,25 @@ h2 {
     color: #2a265f;
 }
 
+h3 { 
+    color: #6d6c7a;
+}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;        
-  gap: 20px;
+  gap: 2%;
   justify-content: center;
 }
 
 a {
   display: block;
-  padding: 10px 15px; 
+  padding: 0.625rem 0.938rem; 
   color: #070427;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 0.313rem;
 }
 
 a:hover {
@@ -56,5 +68,27 @@ nav a:active {
 }
 
 nav a:visited {
+  color: #b760ff;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;       /* uso AI: permite que bajen de línea si no caben */
+  justify-content: center;
+  align-items: center;   /* uso AI: centra verticalmente texto y corazón */
+  gap: 10px;       
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;   /* uso AI: asegura que el texto y su corazón estén alineados */
+}
+
+ul li::after {
+  content: " ❤︎⁠ "; 
+  margin-left: 15px;
+  font-size: 0.8rem;
   color: #b760ff;
 }
